@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: jlshebang
+# key: jl#
+# --
+#!/bin/bash
+#=
+exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' "\${BASH_SOURCE[0]}\" "\$@"
+=#
+
+using ${1:Distributed}
+$0
+
+# Local Variables:
+# mode: julia
+# End:

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lambdaexpr
+# key: lame
+# --
+(lambda ($1) ($2))
